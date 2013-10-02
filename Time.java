@@ -11,12 +11,21 @@ public class Time {
 	private int numeroDeJogos;
 	private String estadio;
 	private ArrayList<Jogador> listaJogadores;
+	private ArrayList<String> listaTitulos;
 	
 	public Time(String nomeTime, String estadio){
 		this.nomeTime = nomeTime;
 		this.estadio = estadio;
 		this.listaJogadores = new ArrayList<Jogador>();
 	}
+	
+	public void adicionar(String umTitulo) {
+        listaTitulos.add(umTitulo);
+    }
+	
+	public ArrayList<String> getListaTitulos() {
+        return listaTitulos;
+    }
 	
 	public ArrayList<Jogador> getListaJogadorer() {
         return listaJogadores;
@@ -74,5 +83,5 @@ public class Time {
 	public void setEstadio(String estadio) {
 		this.estadio = estadio;
 	}
-	
+
 }
