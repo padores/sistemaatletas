@@ -4,19 +4,41 @@ import java.util.ArrayList;
 
 public class Time {
 	
-	ArrayList <Jogador> jogadores;
 	private String nomeTime;
 	private int vitorias;
 	private int derrotas;
 	private int empates;
 	private int numeroDeJogos;
 	private int score;
-	public ArrayList<Jogador> getJogadores() {
-		return jogadores;
+	private String estadio;
+	private ArrayList<Jogador> listaJogadores;
+	
+	public Time(String nomeTime, String estadio){
+		this.nomeTime = nomeTime;
+		this.estadio = estadio;
+		this.listaJogadores = new ArrayList<Jogador>();
 	}
-	public void setJogadores(ArrayList<Jogador> jogadores) {
-		this.jogadores = jogadores;
-	}
+	
+	public ArrayList<Jogador> getListaJogadorer() {
+        return listaJogadores;
+    }
+    
+    public void adicionar(Jogador umJogador) {
+        listaJogadores.add(umJogador);
+    }
+    
+    public void remover(Jogador umJogador) {
+        listaJogadores.remove(umJogador);
+    }
+    
+    public Jogador pesquisar(String nome) {
+        for (Jogador b: listaJogadores) {
+            if (b.getNome().equalsIgnoreCase(nome)) 
+            	return b;
+        }
+        return null;
+    }
+	
 	public String getNomeTime() {
 		return nomeTime;
 	}
@@ -52,6 +74,12 @@ public class Time {
 	}
 	public void setScore(int score) {
 		this.score = score;
+	}
+	public String getEstadio() {
+		return estadio;
+	}
+	public void setEstadio(String estadio) {
+		this.estadio = estadio;
 	}
 	
 }
