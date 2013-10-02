@@ -9,7 +9,6 @@ public class Time {
 	private int derrotas;
 	private int empates;
 	private int numeroDeJogos;
-	private int score;
 	private String estadio;
 	private ArrayList<Jogador> listaJogadores;
 	
@@ -68,12 +67,6 @@ public class Time {
 	}
 	public void setNumeroDeJogos(int numeroDeJogos) {
 		this.numeroDeJogos = numeroDeJogos;
-	}
-	public int getScore() {
-		return score;
-	}
-	public void setScore(int score) {
-		this.score = score;
 	}
 	public String getEstadio() {
 		return estadio;
