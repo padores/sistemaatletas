@@ -54,5 +54,48 @@ public class AtletaTest {
 		assertEquals("Doe", umAtleta.getSobrenome());
 	}
 	
+	@Test
+	public void testSetNome() {
+		umAtleta.setNome("Peter");
+		assertEquals("Peter", umAtleta.getNome());
+	}
+
+	@Test
+	public void testSetNomeDaMae() {
+		umAtleta.setNomeDaMae("Ana");
+		assertEquals("Ana", umAtleta.getNomeDaMae());
+	}
+
+	@Test
+	public void testSetCpf() {
+		umAtleta.setCpf("366");
+		assertEquals("366", umAtleta.getCpf());
+	}
+
+	@Test
+	public void testSetSexo() {
+		umAtleta.setSexo('F');
+		assertEquals('F', umAtleta.getSexo());
+	}
+
+	@Test
+	public void testSetAltura() {
+		umAtleta.setAltura(1.99);
+		assertEquals(1.99, umAtleta.getAltura(), 0.1);}
+
+	@Test
+	public void testSetPeso() {
+		umAtleta.setPeso(101.1);
+		assertEquals(101.1, umAtleta.getPeso(), 0.1);
+	}
+	
+	@Test
+	public void testSetSobrenome(){
+		umAtleta.setSobrenome("Ian");
+		assertEquals("Ian", umAtleta.getSobrenome());
+	}
+	
+	
+	
 	
 }
