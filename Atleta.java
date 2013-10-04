@@ -9,7 +9,7 @@ public class Atleta {
 	private Date dataDeNascimento;
 	private String nomeDaMae;
 	private String cpf;
-	private char sexo;
+	private char sexo; //M - Mulher, H - Homem;
 	private double altura;
 	private double peso;
 	
