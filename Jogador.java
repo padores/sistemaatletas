@@ -51,6 +51,13 @@ public class Jogador extends Atleta {
 	public void setEmpates(int empates) {
 		this.empates = empates;
 	}
+	
+	public void listaStatusJogador(){
+		System.out.println("Nome: "+this.getNome());
+		System.out.println("Vitorias: "+this.getVitorias());
+		System.out.println("Derrotas: "+this.getDerrotas());
+		System.out.println("Empates: "+this.getEmpates());
+	}
 
 
 }
