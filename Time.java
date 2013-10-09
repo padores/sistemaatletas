@@ -18,7 +18,7 @@ public class Time {
 		this.listaJogadores = new ArrayList<Jogador>();
 	}
 	
-	public ArrayList<Jogador> getListaJogadorer() {
+	public ArrayList<Jogador> getListaJogadores() {
         return listaJogadores;
     }
     
@@ -73,6 +73,14 @@ public class Time {
 	}
 	public void setEstadio(String estadio) {
 		this.estadio = estadio;
+	}
+	
+	public void listaStatusTime(){
+		System.out.println("Nome do time: " + this.getNomeTime());
+		System.out.println("Nro de jogos: " + this.getNumeroDeJogos());
+		System.out.println("Vitórias: "+ this.getVitorias());
+		System.out.println("Derrotas: " + this.getDerrotas());
+		System.out.println("Empates: " + this.getEmpates());
 	}
 
 }
