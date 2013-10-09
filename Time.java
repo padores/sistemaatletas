@@ -10,7 +10,7 @@ public class Time {
 	private int empates;
 	private int numeroDeJogos;
 	private String estadio;
-	private ArrayList<Jogador> listaJogadores;
+	public ArrayList<Jogador> listaJogadores;
 	
 	public Time(String nomeTime, String estadio){
 		this.nomeTime = nomeTime;
@@ -18,8 +18,12 @@ public class Time {
 		this.listaJogadores = new ArrayList<Jogador>();
 	}
 	
-	public ArrayList<Jogador> getListaJogadores() {
-        return listaJogadores;
+	public void getListaJogadores() {
+       int i=0;
+		while(i<listaJogadores.size()){
+		listaJogadores.get(i).listaStatusJogador();
+		i++;
+       }
     }
     
     public void adicionar(Jogador umJogador) {
