@@ -14,7 +14,7 @@ public class JogadorTest {
 	public void setUp() throws Exception{
 		umTime = new Time("Bro", "MetLife");
 		outroTime = new Time("Watz", "Rooms");
-		umJogador = new Jogador("Jon", 'H', umTime);
+		umJogador = new Jogador("Jon", 'H');
 		umJogador.setNumero(34);
 		umJogador.setVitorias(3);
 		umJogador.setDerrotas(2);
