@@ -8,16 +8,25 @@ import org.junit.Test;
 public class TimeTest {
 
 	Time umTime;
+	Jogador umJogador;
 	
 	@Before
 	public void setUp() throws Exception {
 		umTime = new Time("Bro", "MetLife");
+		umJogador = new Jogador("Jon", 'H');
 		umTime.setVitorias(3);
 		umTime.setDerrotas(2);
 		umTime.setEmpates(1);
 		umTime.setNumeroDeJogos(9);
+		umTime.adicionar(umJogador);
+		}
+	
+	@Test
+	public void testAdicionar(){
+		umTime.adicionar(umJogador);
+		assertEquals(umJogador, umTime.listaJogadores.get(1));
 	}
-
+	
 	@Test
 	public void testGetNomeTime() {
 		assertEquals("Bro", umTime.getNomeTime());
